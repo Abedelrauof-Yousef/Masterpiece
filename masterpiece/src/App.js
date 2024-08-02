@@ -2,9 +2,9 @@ import "./App.css";
 import AboutUs from "./components/About Page/About";
 import HomePage from "./components/HomePage/HomePage";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Pricing from "./components/Pricing";
+import Pricing from "./components/Pricing Page/Pricing";
 import SignIn from "./components/Registeration/Sign";
-import Contact from "./components/Contact";
+import Contact from "./components/Contact Page/Contact";
 import Navbar from "./components/HomePage/homepageComponents/Navbar";
 
 function App() {

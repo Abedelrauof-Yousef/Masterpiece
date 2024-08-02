@@ -1,98 +1,102 @@
-// src/AboutUs.jsx
-import React from "react";
-import TeamMember from "./TeamMember";
-import "./AboutUs.css"; // Importing CSS for styling
+import React from 'react';
+import './AboutUs.css';
 
 const AboutUs = () => {
   return (
-    <div className="about-container">
-      <section className="intro">
-        <h2>About Us</h2>
-        <p>
-          Welcome to [Company Name]. We are committed to delivering the best
-          solutions in [industry/field]. Our team is passionate about [specific
-          mission].
-        </p>
+    <div className="about-us-pro">
+      <header className="hero">
+        <div className="hero-content">
+          <h1>Redefining Financial Management</h1>
+          <p>BudgetWizeHub: Your partner in achieving financial excellence</p>
+        </div>
+      </header>
+
+      <section className="mission">
+        <div className="container">
+          <h2>Our Mission</h2>
+          <p>At BudgetWizeHub, we're on a relentless pursuit to democratize financial intelligence. We blend cutting-edge technology with deep financial expertise to empower individuals and businesses to make informed decisions, optimize their resources, and achieve their financial aspirations.</p>
+        </div>
       </section>
 
-      <section className="core-values">
-        <h2>Our Core Values</h2>
-        <div className="values-grid">
-          <div className="value">
-            <h3>Integrity</h3>
-            <p>
-              We uphold the highest standards of integrity in all our actions.
-            </p>
+      <section className="values">
+        <div className="container">
+          <h2>Core Values</h2>
+          <div className="values-grid">
+            <div className="value-item">
+              <div className="value-icon">
+                <i className="icon-innovation"></i>
+              </div>
+              <h3>Innovation</h3>
+              <p>Constantly pushing boundaries to deliver state-of-the-art financial solutions.</p>
+            </div>
+            <div className="value-item">
+              <div className="value-icon">
+                <i className="icon-integrity"></i>
+              </div>
+              <h3>Integrity</h3>
+              <p>Upholding the highest standards of honesty and ethical behavior in all our operations.</p>
+            </div>
+            <div className="value-item">
+              <div className="value-icon">
+                <i className="icon-empowerment"></i>
+              </div>
+              <h3>Empowerment</h3>
+              <p>Equipping our clients with the tools and knowledge to take control of their financial future.</p>
+            </div>
+            <div className="value-item">
+              <div className="value-icon">
+                <i className="icon-excellence"></i>
+              </div>
+              <h3>Excellence</h3>
+              <p>Striving for perfection in every aspect of our service and product delivery.</p>
+            </div>
           </div>
-          <div className="value">
-            <h3>Innovation</h3>
-            <p>
-              We constantly seek innovative solutions to drive success for our
-              clients.
-            </p>
-          </div>
-          <div className="value">
-            <h3>Customer Focus</h3>
-            <p>Our customers are at the heart of everything we do.</p>
+        </div>
+      </section>
+
+      <section className="approach">
+        <div className="container">
+          <h2>Our Approach</h2>
+          <div className="approach-content">
+            <div className="approach-text">
+              <p>We believe that financial management should be accessible, intuitive, and tailored to individual needs. Our platform leverages advanced algorithms and machine learning to provide personalized insights and recommendations, ensuring that every user receives a bespoke experience designed to maximize their financial potential.</p>
+            </div>
+            <div className="approach-image">
+              <img src="../../assets/secondHeroSection" alt="FinanceWise Dashboard" />
+            </div>
           </div>
         </div>
       </section>
 
       <section className="team">
-        <h2>Meet Our Team</h2>
-        <div className="team-grid">
-          <TeamMember
-            imgSrc="path/to/leader1.jpg"
-            name="Leader Name"
-            title="CEO & Founder"
-            bio="Brief bio about the leader's role and experience."
-          />
-          <TeamMember
-            imgSrc="path/to/leader2.jpg"
-            name="Leader Name"
-            title="CTO"
-            bio="Brief bio about the leader's role and experience."
-          />
-          {/* Add more TeamMember components as needed */}
-        </div>
-      </section>
-
-      <section className="history">
-        <h2>Our Journey</h2>
-        <div className="timeline">
-          <div className="milestone">
-            <div className="year">2000</div>
-            <div className="description">
-              Company founded with a mission to innovate.
+        <div className="container">
+          <h2>Leadership Team</h2>
+          <div className="team-grid">
+            <div className="team-member">
+              <img src="/api/placeholder/300/300" alt="Sarah Johnson" />
+              <h3>Sarah Johnson</h3>
+              <p>CEO & Co-founder</p>
+            </div>
+            <div className="team-member">
+              <img src="/api/placeholder/300/300" alt="Michael Chang" />
+              <h3>Michael Chang</h3>
+              <p>CTO & Co-founder</p>
+            </div>
+            <div className="team-member">
+              <img src="/api/placeholder/300/300" alt="Emily Rodriguez" />
+              <h3>Emily Rodriguez</h3>
+              <p>Chief Financial Strategist</p>
             </div>
           </div>
-          <div className="milestone">
-            <div className="year">2005</div>
-            <div className="description">Launched first major product.</div>
-          </div>
-          {/* Add more milestones as needed */}
         </div>
       </section>
 
-      <section className="mission-vision">
-        <div className="box">
-          <h3>Our Vision</h3>
-          <p>To be the leading provider of [industry/field] solutions.</p>
+      <section className="cta">
+        <div className="container">
+          <h2>Ready to Transform Your Finances?</h2>
+          <p>Join thousands of individuals and businesses who have already taken the first step towards financial mastery.</p>
+          <a href="#" className="cta-button">Start Your Journey</a>
         </div>
-        <div className="box">
-          <h3>Our Mission</h3>
-          <p>
-            To deliver innovative and reliable services that exceed customer
-            expectations.
-          </p>
-        </div>
-      </section>
-
-      <section className="contact">
-        <h2>Contact Us</h2>
-        <p>Address: 123 Main Street, City, Country</p>
-        <p>Phone: (123) 456-7890</p>
-        <p>Email: contact@company.com</p>
       </section>
     </div>
   );
